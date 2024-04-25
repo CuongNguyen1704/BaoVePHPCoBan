@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <?php
+    $localhost = "localhost";
+    $user = "root";
+    $pass = "";
+    $DB_name = "hi";
+
+    $connect = new pdo("mysql:location = $localhost = $DB_name",$user,$pass);
+    if($connect){
+        echo "Ket noi DB thanh cong";
+    }
+    else{
+        echo "That bai";
+    }
+    ?>
+</body>
+</html>
